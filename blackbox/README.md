@@ -1,4 +1,5 @@
-#TL;DR: `y=-xx+1.5332x+5.80058`
+#TL;DR: y=-xx+1.5332x+5.80058
+AKA "So Long, and Thanks for All the CPU Time".
 
 The first thing I did was writing a convinience class that allowed me to get values from the black box using a `__getitem__` API. Then I just plot the values from the black box, which turned out to be a regular binominal. 
 
