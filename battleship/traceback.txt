@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+Exception: Language 'default' does not have any translations.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/home/danya/Games/renpy/renpy-7.0.0-sdk/renpy/bootstrap.py", line 306, in bootstrap
+    renpy.main.main()
+  File "/home/danya/Games/renpy/renpy-7.0.0-sdk/renpy/main.py", line 513, in main
+    run(restart)
+  File "/home/danya/Games/renpy/renpy-7.0.0-sdk/renpy/main.py", line 102, in run
+    if not renpy.arguments.post_init():
+  File "/home/danya/Games/renpy/renpy-7.0.0-sdk/renpy/arguments.py", line 285, in post_init
+    return commands[command]()
+  File "/home/danya/Games/renpy/renpy-7.0.0-sdk/renpy/translation/extract.py", line 67, in extract_strings
+    extract_strings_core(language, args.destination, args.merge, args.force)
+  File "/home/danya/Games/renpy/renpy-7.0.0-sdk/renpy/translation/extract.py", line 31, in extract_strings_core
+    raise Exception("Language %r does not have any translations." % language)
+Exception: Language 'default' does not have any translations.
+
+Linux-4.15.0-38-generic-x86_64-with-debian-buster-sid
+Ren'Py 7.0.0.196
+Battleship 1.0
+Fri Nov  2 12:40:11 2018
